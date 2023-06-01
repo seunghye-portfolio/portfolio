@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>디지털어린이도서관</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+
+    <script
+      src="https://kit.fontawesome.com/099921e04c.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      defer
+    ></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div id="warp">
+      <header id="header">
+        <div id="headerIn">
+          <h1 class="logo"><a href="#">디지털어린이도서관</a></h1>
+          <ul class="utill">
+            <li><a href="#">홈으로</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+          <nav class="gnb">
+            <h2>메인메뉴</h2>
+            <ul class="list">
+              <li>
+                <a href="#"><i class="fas fa-bars"></i></a>
+              </li>
+              <li class="subWrap">
+                <a href="#" class="m">도서관소개</a>
+                <div class="sub">
+                  <ul>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">도서관현황</a></li>
+                    <li><a href="#">시설안내</a></li>
+                    <li><a href="#">위치/교통편</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="subWrap">
+                <a href="#" class="m">이용안내</a>
+                <div class="sub">
+                  <ul>
+                    <li><a href="#">휴관일/이용시간</a></li>
+                    <li><a href="#">독서회원가입</a></li>
+                    <li><a href="#">자료이용안내</a></li>
+                    <li><a href="#">자료실안내</a></li>
+                    <li>
+                      <a href="#">찾아가는<br />도서대출 서비스</a>
+                    </li>
+                    <li><a href="#">책나래</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="subWrap">
+                <a href="#" class="m">자료검색</a>
+                <div class="sub">
+                  <ul>
+                    <li><a href="#">소장자료검색</a></li>
+                    <li><a href="#">타도서관검색</a></li>
+                    <li><a href="#">도서정보</a></li>
+                    <li><a href="#">정기간행물</a></li>
+                    <li><a href="#">비치희망도서신청</a></li>
+                    <li><a href="#">지역서점바로대출</a></li>
+                    <li><a href="#">원문서비스</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="subWrap">
+                <a href="#" class="m">행사마당</a>
+                <div class="sub">
+                  <ul>
+                    <li><a href="#">이달의행사</a></li>
+                    <li><a href="#">영화상영</a></li>
+                    <li><a href="#">독서문화행사</a></li>
+                    <li><a href="#">독서감상문대회</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="subWrap">
+                <a href="#" class="m">강좌마당</a>
+                <div class="sub">
+                  <ul>
+                    <li><a href="#">문화강좌</a></li>
+                    <li><a href="#">정보화교육</a></li>
+                    <li><a href="#">온라인 수강신청</a></li>
+                    <li><a href="#">강사초빙</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="subWrap">
+                <a href="#" class="m">참여마당</a>
+                <div class="sub">
+                  <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자주묻는 질문</a></li>
+                    <li><a href="#">묻고 답하기</a></li>
+                    <li><a href="#">자유게시판</a></li>
+                    <li><a href="#">행사후기</a></li>
+                    <li><a href="#">설문조사</a></li>
+                    <li><a href="#">독자서평</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="subWrap">
+                <a href="#" class="m">마이페이지</a>
+                <div class="sub">
+                  <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">회원정보수정</a></li>
+                    <li><a href="#">도서대출내역</a></li>
+                    <li><a href="#">수강신청내역</a></li>
+                    <li><a href="#">게시판/댓글현황</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <button class="btnMenu">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </button>
+          <button class="btnSearch">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </button>
+        </div>
+        <div class="subBg"></div>
+      </header>
+      <div id="mainVisual">
+        <div class="bg_cloud">
+          <span>구름배경1</span>
+          <span>구름배경2</span>
+        </div>
+        <div class="mvIn">
+          <div class="mainImg">
+            <div class="text">
+              <span class="item_balloon">풍선</span>
+            </div>
+            <div class="mainbook">
+              <p class="item_twinkle"></p>
+            </div>
+            <p class="cloud"></p>
+            <p class="item_paper_p"></p>
+          </div>
+
+          <ul class="mainQ">
+            <li><a href="#">통합검색</a></li>
+            <li><a href="#">온라인수강</a></li>
+            <li><a href="#">희망도서신청</a></li>
+            <li><a href="#">이달의영화</a></li>
+            <li><a href="#">봉사활동신청</a></li>
+          </ul>
+          <div class="searchBox">
+            <span></span>
+            <input
+              type="text"
+              placeholder="자료검색"
+              name="bookSearch"
+              id="bookSearch"
+            /><label for="bookSearch">bookSearch</label
+            ><a href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <!--공지사항,이용안내, 퀵메뉴 섹션1 부분 시작-->
+        <section class="section1">
+          <div class="notice mg">
+            <h3 class="title">공지사항</h3>
+            <ul class="noticeList">
+              <li>
+                <a href="#">
+                  <p class="noticeInfo">원어민 화상영어 운영 관련 공지</p>
+                  <p class="date">2020-04-14</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="noticeInfo">
+                    4월 아이랑 체험놀이터 &lt; 도깨비나라로 놀러와 &gt;
+                  </p>
+                  <p class="date">2020-04-11</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="noticeInfo">낙동강학당에듀 학부모 특강</p>
+                  <p class="date">2020-03-24</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="noticeInfo">
+                    2020년 겨울방학 일일 법(法)체험 프로그램
+                  </p>
+                  <p class="date">2020-01-18</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="noticeInfo">2020년 겨울 독서교실 안내</p>
+                  <p class="date">2020-01-06</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="noticeInfo">사물함시청 안내</p>
+                  <p class="date">2029-12-29</p>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="moreBtn"><i class="fas fa-plus"></i></a>
+          </div>
+          <div class="stLeft">
+            <div class="calendar mg">
+              <h3 class="title">이용안내</h3>
+              <div class="controller">
+                <div class="month_con">
+                  <p class="num"><span>2</span>월</p>
+                  <a href="#" class="cd__prev"
+                    ><i class="fas fa-angle-left"></i
+                  ></a>
+                  <a href="#" class="cd__next"
+                    ><i class="fas fa-angle-right"></i
+                  ></a>
+                </div>
+                <div class="current-month">
+                  <ul class="week-days">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wde</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                  </ul>
+                  <div class="weeks">
+                    <div class="first">
+                      <span class="last-month">28</span>
+                      <span class="last-month">29</span>
+                      <span class="last-month">30</span>
+                      <span class="last-month">31</span>
+                      <span>01</span>
+                      <span>02</span>
+                      <span>03</span>
+                    </div>
+                    <div class="second">
+                      <span>04</span>
+                      <span>05</span>
+                      <span class="event">06</span>
+                      <span>07</span>
+                      <span>08</span>
+                      <span>09</span>
+                      <span>10</span>
+                    </div>
+
+                    <div class="third">
+                      <span>11</span>
+                      <span>12</span>
+                      <span>13</span>
+                      <span>14</span>
+                      <span class="active">15</span>
+                      <span>16</span>
+                      <span>17</span>
+                    </div>
+
+                    <div class="fourth">
+                      <span>18</span>
+                      <span>19</span>
+                      <span>20</span>
+                      <span>21</span>
+                      <span>22</span>
+                      <span>23</span>
+                      <span>24</span>
+                    </div>
+
+                    <div class="fifth">
+                      <span>25</span>
+                      <span>26</span>
+                      <span>27</span>
+                      <span>28</span>
+                      <span>29</span>
+                      <span>30</span>
+                      <span>31</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="moreBtn"><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="quickMenu">
+              <div class="q1">
+                <p class="telInfo">
+                  <a href="#">이용문의<span></span></a>
+                </p>
+                <p class="map">
+                  <a href="#">찾아오시는길<span></span></a>
+                </p>
+              </div>
+              <div class="q1">
+                <p class="bukguELibrary">
+                  <a href="#">북구<br />전자도서관<span></span></a>
+                </p>
+                <p class="busanELibrary">
+                  <a href="#">부산시<br />전자도서관<span></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="bg_item1">
+            <span><img src="image/bg_item_tree_01.png" alt="나무배경" /></span>
+            <span><img src="image/bg_item_tree_02.png" alt="나무배경" /></span>
+          </p>
+        </section>
+        <!--이달의도서-->
+        <section class="section2">
+          <h3 class="title">이달의도서</h3>
+          <div class="swiper-container book">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="image/book_01.jpg" alt="범인찾기추리북" />
+                  <span class="over">범인찾기추리북</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="image/book_02.jpg"
+                    alt="폭풍우 치는 날의 기적 STORM"
+                  />
+                  <span class="over">폭풍우 치는 날의 기적 STORM</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="image/book_03.jpg" alt="만복이네 떡집" />
+                  <span class="over">만복이네 떡집</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="image/book_04.jpg" alt="오늘도 멋진 생각이야!" />
+                  <span class="over">오늘도 멋진 생각이야!</span>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-button-next next">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev prev">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+          </div>
+        </section>
+        <section class="seciton3">
+          <!--영화-->
+          <div class="movie mg">
+            <div class="swiper-container movieBox">
+              <div class="title w">이달의영화</div>
+              <ul class="movieInfo swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="photo">
+                    <img src="image/movie_01_1.jpg" alt="겨울왕국" />
+                  </div>
+                  <div class="text">
+                    <p class="tit">겨울왕국<span>(Frozen,2013)</span></p>
+                    <p class="date">날짜 : <span>2020.2.22</span></p>
+                    <p class="time">시간 : <span>14시 00분</span></p>
+                    <p class="rating">등급 : <span>전체</span></p>
+                    <p class="director">
+                      감독 : <span>크리스 벅, 제니퍼 리</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="swiper-slide">
+                  <div class="photo">
+                    <img src="image/movie_02_1.jpg" alt="주토피아" />
+                  </div>
+                  <div class="text">
+                    <p class="tit">주토피아<span>(Zootopia,2016)</span></p>
+                    <p class="date">날짜 : <span>2020.2.23</span></p>
+                    <p class="time">시간 : <span>14시 00분</span></p>
+                    <p class="rating">등급 : <span>전체</span></p>
+                    <p class="director">감독 : <span>바이론 하워드</span></p>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination pager"></div>
+            </div>
+          </div>
+          <!--강좌신청-->
+          <div class="applicationTab">
+            <input
+              type="radio"
+              name="tabs"
+              id="tabone"
+              checked="checked"
+              class="tabInput"
+              value="1"
+            />
+            <label for="tabone">문화행사신청</label>
+            <div class="tab">
+              <div
+                class="swiper-container swiper-container-initialized swiper-container-horizontal tabBtn"
+                id="swiper1"
+              >
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="image/applicationTab_tab1_01.jpg"
+                        alt="책읽고 말하고 책수다"
+                      />
+                      <span class="over">책읽고 말하고 책수다</span>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="image/applicationTab_tab1_02.jpg"
+                        alt="책읽고 말하고 책수다"
+                      />
+                      <span class="over">책읽고 말하고 책수다</span>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="image/applicationTab_tab1_03.jpg"
+                        alt="책읽고 말하고 책수다"
+                      />
+                      <span class="over">책읽고 말하고 책수다</span>
+                    </a>
+                  </li>
+                </ul>
+                <div
+                  class="swiper-button-next next"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Next slide"
+                  aria-disabled="false"
+                >
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div
+                  class="swiper-button-prev prev"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Previous slide"
+                  aria-disabled="false"
+                >
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+              </div>
+            </div>
+
+            <input
+              type="radio"
+              name="tabs"
+              id="tabtwo"
+              class="tabInput"
+              value="2"
+            />
+            <label for="tabtwo">온라인수강신청</label>
+            <div class="tab">
+              <div
+                class="swiper-container swiper-container-initialized swiper-container-horizontal tabBtn"
+                id="swiper2"
+              >
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="image/applicationTab_tab2_01.jpg"
+                        alt="영어그림책읽어주는엄마"
+                      />
+                      <span class="over">영어그림책읽어주는엄마</span>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="image/applicationTab_tab2_02.jpg"
+                        alt="규조토부엉이액자만들기"
+                      />
+                      <span class="over">규조토부엉이액자만들기</span>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="image/applicationTab_tab2_03.jpg"
+                        alt="로마세계사"
+                      />
+                      <span class="over">로마세계사</span>
+                    </a>
+                  </li>
+                </ul>
+                <div
+                  class="swiper-button-next next"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Next slide"
+                  aria-disabled="false"
+                >
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div
+                  class="swiper-button-prev prev"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Previous slide"
+                  aria-disabled="false"
+                >
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <p class="bg_item2">
+          <span><img src="image/bg_item_01.png" alt="배경아이템" /></span>
+          <span><img src="image/bg_item_02.png" alt="배경아이템" /></span>
+        </p>
+        <p class="bg_item3">
+          <span><img src="image/bg_item_03.png" alt="배경아이템" /></span>
+        </p>
+      </div>
+      <footer id="footer">
+        <div class="footerIn">
+          <div class="fmanu">
+            <ul>
+              <li><a href="#">개인정보처리방침 </a></li>
+              <li><a href="#">저작권 보호정책</a></li>
+              <li><a href="#">행정서비스현장</a></li>
+              <li><a href="#">뷰어다운로드</a></li>
+              <li><a href="#">신청서다운로드</a></li>
+            </ul>
+          </div>
+          <div class="finfo">
+            <p>(46612) 부산광역시 북구 은행나무로 26(만덕2동 843번지)</p>
+            <p class="tel">TEL : 051-309-2097 <span> / </span></p>
+            <p class="tel">FAX : 051-309-2099</p>
+            <p>
+              본 홈페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며
+              이를 위반시 정보통신망에 의해 처벌됨을 유념하시기 바랍니다.
+            </p>
+          </div>
+          <div class="copy">
+            COPYRIGHT (c) 2009 BUSAN METROPOLITAN CITY BUKGU DIGITAL LIBRARY.
+            ALL RIGHTS RESERVED.
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--#wrap-->
+    <div class="blackBg"></div>
+    <!--.blackBg-->
+    <div class="sideMenu">
+      <ul class="mGnb">
+        <li>
+          <a href="#" class="m"
+            >도서관소개 <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="mSub">
+            <ul>
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">도서관현황</a></li>
+              <li><a href="#">시설안내</a></li>
+              <li><a href="#">위치/교통편</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="m">이용안내 <i class="fas fa-chevron-down"></i></a>
+          <div class="mSub">
+            <ul>
+              <li><a href="#">휴관일/이용시간</a></li>
+              <li><a href="#">독서회원가입</a></li>
+              <li><a href="#">자료이용안내</a></li>
+              <li><a href="#">자료실안내</a></li>
+              <li>
+                <a href="#">찾아가는<br />도서대출 서비스</a>
+              </li>
+              <li><a href="#">책나래</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="m">자료검색 <i class="fas fa-chevron-down"></i></a>
+          <div class="mSub">
+            <ul>
+              <li><a href="#">소장자료검색</a></li>
+              <li><a href="#">타도서관검색</a></li>
+              <li><a href="#">도서정보</a></li>
+              <li><a href="#">정기간행물</a></li>
+              <li><a href="#">비치희망도서신청</a></li>
+              <li><a href="#">지역서점바로대출</a></li>
+              <li><a href="#">원문서비스</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="m">행사마당 <i class="fas fa-chevron-down"></i></a>
+          <div class="mSub">
+            <ul>
+              <li><a href="#">이달의행사</a></li>
+              <li><a href="#">영화상영</a></li>
+              <li><a href="#">독서문화행사</a></li>
+              <li><a href="#">독서감상문대회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="m">강좌마당 <i class="fas fa-chevron-down"></i></a>
+          <div class="mSub">
+            <ul>
+              <li><a href="#">문화강좌</a></li>
+              <li><a href="#">정보화교육</a></li>
+              <li><a href="#">온라인 수강신청</a></li>
+              <li><a href="#">강사초빙</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="m">참여마당 <i class="fas fa-chevron-down"></i></a>
+          <div class="mSub">
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">자주묻는 질문</a></li>
+              <li><a href="#">묻고 답하기</a></li>
+              <li><a href="#">자유게시판</a></li>
+              <li><a href="#">행사후기</a></li>
+              <li><a href="#">설문조사</a></li>
+              <li><a href="#">독자서평</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="m"
+            >마이페이지 <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="mSub">
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">회원정보수정</a></li>
+              <li><a href="#">도서대출내역</a></li>
+              <li><a href="#">수강신청내역</a></li>
+              <li><a href="#">게시판/댓글현황</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="mUtill">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">홈으로</a></li>
+      </ul>
+      <a href="#" class="closeMenu"><i class="fas fa-times"></i></a>
+    </div>
+  </body>
+</html>

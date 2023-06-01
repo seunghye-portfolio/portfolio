@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*global */
+body {overflow-x: hidden;}
+
+#wrap {max-width: 1920px; overflow-x: hidden; margin: 0 auto;}
+/*common*/
+.moreBtn {width: 154px; height: 35px;}
+.moreBtn a {display: block; background: #123c48; line-height: 35px; color: rgba(255, 255, 255, 0.8); padding-left: 20px; font-size: 14px;}
+.moreBtn i {display: inline-block; width: 15px; height: 1px; background: #fff; margin-bottom: 4px; transition: all .3s;}
+.moreBtn:hover i {width: 35px;}
+
+/*header*/
+#header {width: 100%; height: 90px; background: fff; position: relative; top: 0; left: 0; z-index: 100;}
+#headerIn {width: 1100px; margin: 0 auto; position: relative;}
+.logo {padding-top: 21px;}
+
+.gnb {position: absolute; top: 0; left: 255px;}
+.gnb .mainMenu {float: left; position: relative;}
+.gnb .mainMenu>a {display: block; font-size: 20px; font-weight: 500; width: 150px; height: 90px; line-height: 90px; text-align: center;}
+.gnb .mainMenu:hover>a {color: #7bc342;}
+.gnb .sub {position: absolute; top: 90px; left: 0; width: 150px; background: #fff; display: none;}
+.gnb .sub ul li a {display: block; width: 150px; height: 50px; line-height: 50px; text-indent: 20px; font-size: 16px; font-weight: 400;}
+.gnb .sub ul li:hover a {display: block; font-weight: 500; color: #7bc342;}
+
+.utill {position: absolute; top: 25px; right: 0;}
+.utill>div {float: left;}
+
+.mainSearch a {display: block; width: 22px; height: 23px; background: url(../images/mainSearch.png) no-repeat center; padding: 10px;}
+.mainMeunBtn a {display: block; width: 26px; height: 22px; background: url(../images/mainManu.png) no-repeat center; padding: 10px;}
+
+/*footer*/
+#footer {width: 100%; height: 250px; background: #123c48;}
+.footerIn {width: 1100px; margin: 0 auto; position: relative;}
+.flogo {width: 128px; height: 62px; background: url(../images/flogo.png) no-repeat; position: absolute; top: 75px; left: 0;}
+.finfo {color: rgba(255, 255, 255, .5); padding-top: 75px;}
+.finfo .finfo1,
+.finfo .finfo2,
+.finfo .finfo3 {margin-bottom: 10px; margin-left: 185px;}
+.finfo span {font-size: 13px; float: left; border-right: 1px solid rgba(255, 255, 255, .5); margin-right: 10px; padding-right: 10px; line-height: 13px;}
+.finfo span:last-child {border: 0;}
+
+.copy {font-size: 13px; color: rgba(255, 255, 255, .5); margin-left: 185px;}
+.ftel {position: absolute; top: 70px; right: 0; width: 190px;}
+.tel {font-size: 27px; line-height: 27px; color: #fff; margin-bottom: 12px;}
+.email {font-size: 13px;}
+.email a {color: #fff;}
+
+.fsns {position: absolute; top: 140px; right: 0; width: 190px;}
+.fsns li {float: left; margin-right: 5px;}
+.fsns li:nth-child(5) {margin-right: 0;}
+.fsns li a {display: block; width: 34px; height: 34px; background-image: url(../images/fsns.png); background-repeat: no-repeat; text-indent: -9999px;}
+
+.fsns li:nth-child(2) a {background-position: -38px 0;}
+.fsns li:nth-child(3) a {background-position: -76px 0;}
+.fsns li:nth-child(4) a {background-position: -115px 0;}
+.fsns li:nth-child(5) a {background-position: -153px 0;}
+
+.fsns li a:hover {background-image: url(../images/fsns_hover.png);}
+.fsns li:nth-child(2):hover a {background-position: -38px 0;}
+.fsns li:nth-child(3):hover a {background-position: -76px 0;}
+.fsns li:nth-child(4):hover a {background-position: -115px 0;}
+.fsns li:nth-child(5):hover a {background-position: -153px 0;}
+
+/*quick*/
+.quick {position: fixed; bottom: 50px; right: 30px; z-index: 500;}
+.quick a {display: block; color: #fff; padding: 10px 40px; background: #5b5b5d; border-radius: 30px; font-weight: 500;}
+.quick a:hover {background: #7bc342; color: #123c48;}
